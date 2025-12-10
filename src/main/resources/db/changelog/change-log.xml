@@ -17,4 +17,15 @@ dbms="postgresql">
         <comment>Создание первой таблицы</comment>
       </changeSet>
 
+    <changeSet runAlways="true" author="zelinskaia" id="script2" dbms="postgresql">
+        <sqlFile dbms="postgresql"
+                 path="scripts/script2.sql"
+                 encoding="UTF-8"
+                 endDelimiter="/"
+                 relativeToChangelogFile="true"
+                 splitStatements="true"
+                 stripComments="true"
+        />
+        <comment>Вставка ФИО студента при каждом запуске</comment>
+    </changeSet>
 </databaseChangeLog>
